@@ -1,0 +1,18 @@
+# Ignorar node_modules de todos os diretórios
+**/node_modules/
+
+# Ignorar pastas de build
+**/dist/
+
+# Arquivos de ambiente
+*.env
+
+# Logs
+*.log
+
+# Cache e builds do TypeScript
+*.tsbuildinfo
+
+# Arquivos específicos de sistemas operacionais
+.DS_Store
+Thumbs.db
