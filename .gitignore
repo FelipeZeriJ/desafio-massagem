@@ -1,18 +1,23 @@
-# Ignorar node_modules de todos os diretórios
-**/node_modules/
+# Ignora dependências do Node.js
+backend/node_modules/
 
-# Ignorar pastas de build
-**/dist/
+# Ignora saída de build, se for criada
+backend/dist/
 
-# Arquivos de ambiente
-*.env
+# Ignora arquivos de ambiente
+.env
+backend/.env
 
 # Logs
 *.log
+backend/*.log
 
-# Cache e builds do TypeScript
-*.tsbuildinfo
+# Docker volumes temporários
+**/.docker-volume/
 
-# Arquivos específicos de sistemas operacionais
+# VSCode
+.vscode/
+
+# Sistema operacional
 .DS_Store
 Thumbs.db
