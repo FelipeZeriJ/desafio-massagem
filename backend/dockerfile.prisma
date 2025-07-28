@@ -1,0 +1,11 @@
+FROM node:22.1.0-alpine
+
+WORKDIR /app
+
+COPY package*.json ./
+RUN npm install
+
+COPY . .
+
+# Executa comandos prisma ao rodar
+CMD ["npx", "prisma", "--help"]
