@@ -1,0 +1,27 @@
+# Padroniza todos os arquivos de texto para usar LF (Unix-style)
+* text=auto eol=lf
+
+# Evita que arquivos binários sejam tratados como texto
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.mp4 binary
+*.mp3 binary
+*.zip binary
+
+# Regras específicas para arquivos comuns em projetos Node.js
+*.ts   text eol=lf
+*.tsx  text eol=lf
+*.js   text eol=lf
+*.json text eol=lf
+*.md   text eol=lf
+*.yml  text eol=lf
+*.yaml text eol=lf
+*.env  text eol=lf
+*.sh   text eol=lf
+*.Dockerfile text eol=lf
+*.gitattributes text eol=lf
+*.gitignore text eol=lf
