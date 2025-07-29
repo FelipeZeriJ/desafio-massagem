@@ -27,20 +27,3 @@ services:
       POSTGRES_DB: massagem
     volumes:
       - postgres_data:/var/lib/postgresql/data
-
-  prisma:
-    build:
-      context: ./backend
-      dockerfile: Dockerfile.prisma
-    container_name: prisma_massagem
-    volumes:
-      - ./backend:/app
-    env_file:
-      - ./backend/.env
-    depends_on:
-      - db
-    entrypoint: [""]
-
-
-volumes:
-  postgres_data:
